@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans';
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    z-index: 4;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 60em;
+    height: 40em;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-position: -36em -17em;
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 1.3em;
+    z-index: 2;
+}
+
+.image-container {
+    width: 30em;
+    height: 40em;
+    position: relative;
+    z-index: 5;
+    flex: 1;
+    overflow: hidden;
+}
+
+.woman-illustration {
+    position: absolute;
+    transform: translateX(-5em) translateY(5em);
+    overflow: hidden;
+}
+
+.box-illustration {
+    position: absolute;
+    transform: translateX(-6em) translateY(13em);
+    z-index: 7;
+}
+
+.details-container {
+    width: 30em;
+    height: 40em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0 1em;
+}
+
+.topic-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topic-header:hover {
+    color: orange;
+}
+
+.arrow-down {
+    width: 1em;
+    height: 0.8em;
+}
+
+.arrow-up {
+    transform: scaleY(-1);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.topic-header-active {
+    font-weight: bold;
+}
+
+.hidden {
+   display: none;
+}
+
+.active {
+    position: relative;
+    bottom: 0.9em;
+}
